@@ -1,0 +1,795 @@
+{
+  "genesis_time": "2020-02-14T16:19:44.520894476Z",
+  "chain_id": "darchub",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "issue": {
+      "starting_issue_id": "1",
+      "issues": null,
+      "params": {
+        "issue_fee": {
+          "denom": "darc",
+          "amount": "2000"
+        },
+        "mint_fee": {
+          "denom": "darc",
+          "amount": "1000"
+        },
+        "freeze_fee": {
+          "denom": "darc",
+          "amount": "2000"
+        },
+        "unfreeze_fee": {
+          "denom": "darc",
+          "amount": "2000"
+        },
+        "burn_fee": {
+          "denom": "darc",
+          "amount": "1000"
+        },
+        "burn_from_fee": {
+          "denom": "darc",
+          "amount": "1000"
+        },
+        "transfer_owner_fee": {
+          "denom": "darc",
+          "amount": "20000"
+        }
+      }
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "600000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "darc"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "supply": {
+      "supply": []
+    },
+    "params": null,
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "darc",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "darc",
+        "amount": "100000000"
+      }
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "darc",
+            "amount": "1000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "accounts": [
+      {
+        "address": "darc1rzdt9wrzwv3x7vv6f7xpyaqqgf3lt6phptqtsx",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "300000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc1ejgxhtvj6c9n7d7g29jmsxhnn6wh2j8rll0vfc",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "200000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc15h6uhzufhe0d0avuk54zcqw0t66qefeyc3vttf",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "200000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc1f5sehz0tw7c357p0wqect8lu4728etp08jl55a",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "200000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc1z6u8hddknlp33z79rra7q4gjlw3thwqrdzyplq",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "175000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc1707wrvr797umhs7f8yqpa5v7g5hecdp3hafd0p",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "175000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc15gszq0w4leup59l3ewyv0d4ca8t6v9cyuqm2k6",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "150000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc1mte8eevm6a766l6gx2tjphcdetr2httsudaqmf",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "150000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc1d22ccl8xpzzzldl28l9gs9htrgaatkaxjwskkl",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "125000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "darc1x68e44c90hy49ppxqr2n0lawkv5w5vzp98uw4j",
+        "coins": [
+          {
+            "denom": "darc",
+            "amount": "125000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      }
+    ],
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "dirac",
+                    "identity": "",
+                    "website": "",
+                    "details": "9"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1d22ccl8xpzzzldl28l9gs9htrgaatkaxjwskkl",
+                  "validator_address": "darcvaloper1d22ccl8xpzzzldl28l9gs9htrgaatkaxr2q36h",
+                  "pubkey": "darcvalconspub1zcjduepqddwdg6em65kjfs7cqcwfrh7k85m36xhwdf2exxfz55neyrv4shnqhh5hu7",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AwTwXUS/TlxWFyUnDIVwSDbmx2U3G2sLqMFlYzZ2wt36"
+                },
+                "signature": "KsuyM8iHMfAdeACfVe6bOlrKa6DBrKC9f9tVtLUZ+uB1nnGqN27rvFr3SX+WTHRwGmXLSf7gw+G7eFg4MGTw5A=="
+              }
+            ],
+            "memo": "61d2edd0e625312623f5bcc7de2e7a49a5cdf860@188.166.37.121:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "einstein",
+                    "identity": "",
+                    "website": "",
+                    "details": "6"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1707wrvr797umhs7f8yqpa5v7g5hecdp3hafd0p",
+                  "validator_address": "darcvaloper1707wrvr797umhs7f8yqpa5v7g5hecdp3xee2rf",
+                  "pubkey": "darcvalconspub1zcjduepqdhk5l64jh06hhame0ar5tm0973lnn9kq5npdx4grgz55wxup9k8q93g6xr",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A1MgY/W/yb5bb4d3PT048MsdDRgxnY2uIEZqeq2kcmOM"
+                },
+                "signature": "JE2QxM1+O8fMoBt+/txO5p8kMFB67/WauGSkMMK9Po5AstJLJmZNG/YX8b9qvm7iI6MTgPWoiVYjdcx+rFb/xw=="
+              }
+            ],
+            "memo": "47ce8ec60b025210b54d27420b054308a698f235@167.172.37.36:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "galilei",
+                    "identity": "",
+                    "website": "",
+                    "details": "7"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc15gszq0w4leup59l3ewyv0d4ca8t6v9cyuqm2k6",
+                  "validator_address": "darcvaloper15gszq0w4leup59l3ewyv0d4ca8t6v9cydytd6j",
+                  "pubkey": "darcvalconspub1zcjduepqer70pncd3c09lua07r5jqqhvu4fg59mxn0cqyfucl7g0r3l6fq4smms86q",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AuDRS1X4aDqYs3XFwtZnhXwmK73AAQ9HVFC9XREjCfqW"
+                },
+                "signature": "Me+1a1HZPE8psnpBxnobU3QW9xjxb4ru00yk+JVDALkwz2loshSnljonbY45Qqa3Av3HiMttDDThsuFcSSO/jw=="
+              }
+            ],
+            "memo": "90b51f563d01585b6cd56550444b2fe0e2344f58@167.172.45.243:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "hawking",
+                    "identity": "",
+                    "website": "",
+                    "details": "1"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1rzdt9wrzwv3x7vv6f7xpyaqqgf3lt6phptqtsx",
+                  "validator_address": "darcvaloper1rzdt9wrzwv3x7vv6f7xpyaqqgf3lt6phs0svuw",
+                  "pubkey": "darcvalconspub1zcjduepq5hqv80vp5ll0w5pxhy89rjfgqvpdqzz44ywzeskhdy8mentdjmdqu5m86d",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AiL5ZAWAZCRjU2b+gcaRh+M60wj4JG6En1Rv0jpv5yBM"
+                },
+                "signature": "hlc0KtzOcfjQOi8z/6VWuzZxRXp5MAz9BqjBM3cmIClqUZKa3s9Up5CduPg6wJ9DaLPefX0g/yGInAo43f2J9Q=="
+              }
+            ],
+            "memo": "663a3721ebb6ab35a33d944a04f4e7e021407a7c@95.216.212.119:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "heisenberg",
+                    "identity": "",
+                    "website": "",
+                    "details": "2"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1ejgxhtvj6c9n7d7g29jmsxhnn6wh2j8rll0vfc",
+                  "validator_address": "darcvaloper1ejgxhtvj6c9n7d7g29jmsxhnn6wh2j8rwmlt9s",
+                  "pubkey": "darcvalconspub1zcjduepq4eyt0qkrf5py2fwzve0zmzvwe3g342qtrkc8kexphmz7ryv7llkq99k6ym",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A1BB+mFe18KmwMAJfqwaahQurpH5JpaddhJ4NC5HVMPg"
+                },
+                "signature": "FjOm9HlIUMs2ECg19sPypNYWSFBL2WoHb9TNY7wwbmg9y/mU0vcc+q7xjGZHq+aGydUhvMBw1u7/tL5bn1vJiQ=="
+              }
+            ],
+            "memo": "ce8284e67ace59ab8b9e28236a737c6670dfbbec@95.216.215.127:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "kepler",
+                    "identity": "",
+                    "website": "",
+                    "details": "5"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1z6u8hddknlp33z79rra7q4gjlw3thwqrdzyplq",
+                  "validator_address": "darcvaloper1z6u8hddknlp33z79rra7q4gjlw3thwqrux5xng",
+                  "pubkey": "darcvalconspub1zcjduepqg7k5sch6e4t9ha593lal2rkma3urv0aw2j86wz0ymjzjcufl9wlsq3seyf",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AmOSXisFUJpM+b+Mg7E0BG2rew94FTNX4w6G/JRDFrX5"
+                },
+                "signature": "+6ntk+dMYWWnoD3Uwm4+nprarjrLf3CqnL0yez8kILcYw1LJHj8CnudYdSdmBC7QqGD2BeG4x8maClxNoxERPQ=="
+              }
+            ],
+            "memo": "2c99d4b24584aff8d62e062cec1d18cb33736fbc@188.166.20.172:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "kopernik",
+                    "identity": "",
+                    "website": "",
+                    "details": "3"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc15h6uhzufhe0d0avuk54zcqw0t66qefeyc3vttf",
+                  "validator_address": "darcvaloper15h6uhzufhe0d0avuk54zcqw0t66qefeyf4uv8p",
+                  "pubkey": "darcvalconspub1zcjduepqqhkr2mnyl0htt8w5y7dgmu8efxt74cxufs3f3r3c7jv6yahqhq7qqejhl8",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A2AiXDQgQ0+ZXkDLGLnTUTNq8Lvy3CdJGTkwlUkecQZN"
+                },
+                "signature": "hHaT6vs3bZ5Uw8PYn1+yh0MbIQkAyb3BoVTwk4YQJWohOTRv8wm7RDN4y5EYUxc8rXgPRFFzaAw6fx1OdVNBwA=="
+              }
+            ],
+            "memo": "75f68a272e037e8f5c5bd279bcbf306ad63b7140@95.216.210.171:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "newton",
+                    "identity": "",
+                    "website": "",
+                    "details": "4"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1f5sehz0tw7c357p0wqect8lu4728etp08jl55a",
+                  "validator_address": "darcvaloper1f5sehz0tw7c357p0wqect8lu4728etp0kk0nc4",
+                  "pubkey": "darcvalconspub1zcjduepqhdsrlk2rfsqv32hmm56hjzq72a2vzml8z740ega8cj0hlwqjpnxq33rstk",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AoBpKWT2sXlN/ReU/tIh97RbIEf9BQiiLY/ye0zNfIPu"
+                },
+                "signature": "f/RA0tsF59z1mybxR/kM8Z/4n6Qa/uwu4A8KwRMU63sK+ymS6U9oEctLOg0gO+lWqJXOSxuUJVVW8fWmG76uMQ=="
+              }
+            ],
+            "memo": "774d065130466e4a7c45dd8a2cad01bd84651bc7@95.216.207.219:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "penrose",
+                    "identity": "",
+                    "website": "",
+                    "details": "8"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1mte8eevm6a766l6gx2tjphcdetr2httsudaqmf",
+                  "validator_address": "darcvaloper1mte8eevm6a766l6gx2tjphcdetr2httsdfd8hp",
+                  "pubkey": "darcvalconspub1zcjduepq578vumpgmnxv4mcrrhj0dc2529646qmz83wgyyt6us7mhg58dlhqjlzx6h",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AnKYFfkirmvKeibNDeQiyJOt82oTBzc7NcP5fF9JPyYc"
+                },
+                "signature": "KyegrITPdaiLogGuM4M6KeTZJ5HgDWWjapXIP19VugBvZ+aQYQUVQIg+vWdkLjx2qjJRdMm+rXUZ8x8B4+2zCg=="
+              }
+            ],
+            "memo": "7be2996ff3324021303256de01ffb80153b0353d@167.172.43.125:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "planck",
+                    "identity": "",
+                    "website": "",
+                    "details": "10"
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "darc1x68e44c90hy49ppxqr2n0lawkv5w5vzp98uw4j",
+                  "validator_address": "darcvaloper1x68e44c90hy49ppxqr2n0lawkv5w5vzp5rvfe6",
+                  "pubkey": "darcvalconspub1zcjduepqy4h8ujaewxpw7vmyn7d6l78ply5dx4keh9envm0e7g0n2sexy5uqgrms00",
+                  "value": {
+                    "denom": "darc",
+                    "amount": "100000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "ArLGpVcSf/WDu02B9sYYoXJqv3o7fcaK8ixpooafWCsK"
+                },
+                "signature": "kySeVs82/oeVQIvR80GKRKtYU/C0egnz6tEz6a/CJMBCi44E2O6JAIVbz/hsQNuTZ7s5Gg2tFqL58YBA91/9uA=="
+              }
+            ],
+            "memo": "ea88129d87179702a54bcb671b8a7700ac0b7e74@188.166.68.78:26656"
+          }
+        }
+      ]
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    }
+  }
+}
