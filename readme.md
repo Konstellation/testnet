@@ -1,4 +1,4 @@
-# Cosmos Testnets
+# Konstellation Testnets
 
 This repo collects the genesis and configuration files for the various Konstellation
 testnets. It exists so the [Konstellation](https://github.com/konstellation/konstellation)
