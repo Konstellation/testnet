@@ -57,12 +57,12 @@ jobs:
 
 workflows:
   version: 2
-  build-konstellation:
+  build-testnet:
     jobs:
       - deploy:
           type: approval
           filters:
             tags:
               only: /n.*/
-            branches:
-              only: master
+#            branches:
+#              only: master
