@@ -1,0 +1,68 @@
+# Golang CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-go/ for more details
+version: 2
+
+defaults: &build_defaults
+  working_directory: /go/src/github.com/konstellation/testnet
+  docker:
+    - image: circleci/golang:1.13
+
+deps: &dependencies
+  run:
+    name: dependencies
+    command: |
+      export PATH="$PATH:$GOBIN"
+
+jobs:
+  deploy:
+    <<: *build_defaults
+    steps:
+      - checkout
+      - run: mkdir -p /tmp/workspace/dist
+      - *dependencies
+      - restore_cache:
+          keys:
+            - go-mod-v1-{{ checksum "go.sum" }}
+      - run: go env
+      - run: echo $PATH
+      - run: go get github.com/mitchellh/gox
+      - run: go get -u github.com/tcnksm/ghr
+#      - run: go get -u github.com/stevenmatthewt/semantics
+      - run:
+          name: cross compile
+          command: |
+            tag=$(git describe --tags)
+            if [ "$tag" ]; then
+              cd /tmp/workspace/dist/; tar -czf "${tag}.tar.gz" $tag; done
+              ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME --replace $tag /tmp/workspace/dist/
+            else
+              echo "The commit message(s) did not indicate a major/minor/patch version."
+            fi
+      - store_artifacts:
+          path: /tmp/workspace/dist
+          destination: dist
+      - add_ssh_keys:
+          fingerprints:
+            - "d0:91:bc:b3:41:44:5d:ee:8b:18:ea:14:ba:96:5a:8c"
+      - run:
+          name: create release
+          command: |
+            tag=$(git describe --tags)
+            if [ "$tag" ]; then
+              ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME --replace $tag /tmp/workspace/dist/
+            else
+              echo "The commit message(s) did not indicate a major/minor/patch version."
+            fi
+
+workflows:
+  version: 2
+  build-konstellation:
+    jobs:
+      - deploy:
+          type: approval
+          filters:
+            tags:
+              only: /n.*/
+            branches:
+              only: master
