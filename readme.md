@@ -21,12 +21,12 @@ $ shasum -a 256 genesis.json
 726e0c03ad96afd012af7161af8ed753348e157464951a76830733e7eb49879e  -
 ```
 
-Seed nodes:
+Persistent peers:
 
 ```
-709dd4c6d8677df533cbe56c41cbf78a4b03ab1c@node1.konstellation.tech:26656
-63077c418b50b67453043f3cd9124f3445d99b92@node2.konstellation.tech:26656
-3528e0f60b31165f9d9befd33025821aeb20a64f@node3.konstellation.tech:26656
+1f00c4302bcd6d9240102ce3c6444469e48f176c@node3.konstellation.tech:26656
+7e565fdcc27f581abd637e68750664073112081e@node1.konstellation.tech:26656
+bf1f16c89dd3cc07e69201e4f7a24a70df556c0c@node2.konstellation.tech:26656
 ```
 
 ```
