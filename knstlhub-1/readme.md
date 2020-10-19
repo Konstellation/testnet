@@ -24,15 +24,6 @@ RELEASE=v0.1.30
 KONSTELLATION_VERSION=v0.1.30
 ```
 
-# How to use keybase
-
-The `keybase ID` is a 16-digit string that is generated with a keybase.io account. It's a cryptographically secure method of verifying your identity across multiple online networks. The Keybase API allows us to retrieve your Keybase avatar. This is how you can add a logo to your validator profile
-
-1. Go to https://keybase.io/
-2. Click `login`，then` Join Keybase` and finish the sign up process
-3. Click `add a PGP key`，then choose `I need a public key`，then click `Ok，got it`。
-4. After filling the form, you should click on `Let the math begin`，then you could get your own key, then the whole registration process is finished. 
-
 # How to finish tasks in Konstellation testnet
 
 You need to use keybase to generate your own [pgp fingerprint](https://github.com/Konstellation/testnet/blob/master/How%20to%20use%20keybase.md) first. 
