@@ -26,7 +26,7 @@ KONSTELLATION_VERSION=v0.1.30
 
 # How to finish tasks in Konstellation testnet
 
-You need to use keybase to generate your own [pgp fingerprint](https://github.com/Konstellation/testnet/blob/master/How%20to%20use%20keybase.md) first. 
+You need to use keybase to generate your own [pgp fingerprint](https://github.com/Konstellation/testnet/blob/master/How%20to%20use%20keybase.md) first. This ID is used to identify yourself in Kontellation incentivized  testnet game. 
 
 You have to fill in this [form](https://forms.gle/L1n9bacVSxEJm8GF9) to complete your sign-up process. 
 
@@ -34,6 +34,17 @@ The instructions are the following:
 
 ## Tasks for knstlhub-1
 
+
+ | No   | Name                                           | Details                                                      | Criteria                                                     | Reward  |
+  | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
+  | 1    | Make a tx between your wallets | Create two wallets. The first *wallet_1* using https://wallet.konstellation.tech and the second one **wallet_2** using `konstellationcli keys add <name>` in the terminal (command line). Export *wallet2* with keystore using `konstellationcli keys export-keystore <name_of_your_key>` in the terminal. Import the *wallet 2* to the http://wallet.konstellation.tech/recover/key/text. Run `send` tx between *wallet_1* and *wallet_2* with your `name-pgpid` as memo | Submit two addresses, tx hash | 50 darc |
+  | 2   | Setup a Full node and create a validator                             | set up a full node and use `name-pgp-fingerprint` as `moniker` | Submit your IP and the team could check the configuration of your node | 50 darc |
+  | 3   | Withdraw earnings from staking          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash and the team could verify the details of transaction | 50 darc |
+  | 4   | Unjail your validator      | Shutdown your node and wait until it will be jailed.                            | Run `unjail` transaction with your `name-pgpid` as memo. Submit your transaction hash | 50 darc |
+  | 5   | Withdraw earnings #2          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash and the team could verify the details of transaction | 50 darc |
+  | 6   | Delegate some **darc** to your validator      | Complete an delegate transaction                           | Run `delegate`transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50 iris |  
+  | 5   | Withdraw earnings #3          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash and the team could verify the details of transaction | 50 darc |
+  
 ### How to submit evidence
 
 You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/konstellation/testnet/issues/1):
