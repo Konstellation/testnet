@@ -41,9 +41,13 @@ The instructions are the following:
   | 2   | Setup a Full node and create a validator                             | set up a full node and use `name-pgp-fingerprint` as `moniker` | Submit your IP and the team could check the configuration of your node | 50 darc |
   | 3   | Withdraw earnings from staking          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash and the team could verify the details of transaction | 50 darc |
   | 4   | Unjail your validator      | Shutdown your node and wait until it will be jailed.                            | Run `unjail` transaction with your `name-pgpid` as memo. Submit your transaction hash | 50 darc |
-  | 5   | Withdraw earnings #2          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash and the team could verify the details of transaction | 50 darc |
-  | 6   | Delegate some **darc** to your validator      | Complete an delegate transaction                           | Run `delegate`transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50 iris |  
-  | 5   | Withdraw earnings #3          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash and the team could verify the details of transaction | 50 darc |
+  | 5   | Withdraw earnings #2          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 6   | Delegate some **darc** to your validator      | Complete an delegate transaction                           | Run `delegate`transaction with your `name-pgpid` as memo. Submit your transaction hash | 50 iris |  
+  | 7   | Withdraw earnings #3          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 8   | Redelegate some **darc** from your validator *validator_1* to another *validator_2*           |  Complete an redelegate transaction          | Run `redelegate begin`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 9   | Withdraw earnings #5          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 10  | Undelegate some **darc** from *validator_2*           |  Complete an undelegate transaction          | Run `begin_unbond`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |*           |  Complete an redelegate transaction          | Run `redelegate begin`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 11   | Withdraw earnings #6          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
   
 ### How to submit evidence
 
