@@ -31,7 +31,7 @@ You need to use keybase to generate your own [pgp fingerprint](https://github.co
 You have to fill in this [form](https://forms.gle/L1n9bacVSxEJm8GF9) to complete your sign-up process. 
 
 The instructions are the following: 
-For more information, please visit [doc](https://docs.google.com/document/d/1mFUy9Dgv5KGMv4ieEylxMzFWFLfgHKUd3U6leLKWC_w/edit?usp=sharing).
+For more information, please visit [doc](https://docs.google.com/document/d/1_oAd4pj3v7yyU9akJtTQ9tZQKmgCtDETBHnTU27fEFo/edit?usp=sharing).
 
 ## Tasks for knstlhub-1
 
