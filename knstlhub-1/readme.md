@@ -49,6 +49,14 @@ For more information, please visit [doc](https://docs.google.com/document/d/1_oA
   | 9   | Withdraw earnings #5          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
   | 10  | Undelegate some **darc** from *validator_2*           |  Complete an undelegate transaction          | Run `begin_unbond`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |*           |  Complete an redelegate transaction          | Run `redelegate begin`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
   | 11   | Withdraw earnings #6          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 12   | Create token         | Run `issue_token` transaction with wallet_1 and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 13   | Transfer         | Run `transfer` transaction to wallet_2 from wallet_1 and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 14   | Approve allowance         | Run `issue_approve` transaction with wallet_1 as spender of wallet_2's tokens and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 15   | Tranfer from         | Create new *wallet_3*. Run `transfer_from` transaction from *wallet_2* to *wallet_3* signed by *wallet_1* and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 16   | Mint         | Run `issue_mint` transaction and your `name-pgpid` as memo. | Submit tx hash | 50 darc |
+  | 17   | Burn         | Run `issue_burn` transaction and your `name-pgpid` as memo. | Submit tx hash | 50 darc |
+  | 18   | Freeze         | Run `issue_freeze` transaction and your `name-pgpid` as memo. Try to run another `transfer` transaction. You might see error in tx body | Submit tx hash | 50 darc |
+  | 19   | Transfer ownership         | Run `transfer_ownership` transaction and your `name-pgpid` as memo | Submit tx hash | 50 darc |
   
 ### How to submit evidence
 
