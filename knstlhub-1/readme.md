@@ -23,3 +23,51 @@ CHAIN_ID=knstlhub-1
 RELEASE=v0.1.30
 KONSTELLATION_VERSION=v0.1.30
 ```
+
+# How to finish tasks in Konstellation testnet
+
+You need to use keybase to generate your own [pgp fingerprint](https://github.com/Konstellation/testnet/blob/master/How%20to%20use%20keybase.md) first. This ID is used to identify yourself in Kontellation incentivized  testnet game. 
+
+You have to fill in this [form](https://forms.gle/L1n9bacVSxEJm8GF9) to complete your sign-up process. 
+
+The instructions are the following: 
+For more information, please visit [doc](https://docs.google.com/document/d/1_oAd4pj3v7yyU9akJtTQ9tZQKmgCtDETBHnTU27fEFo/edit?usp=sharing).
+
+## Tasks for knstlhub-1
+
+
+ | No   | Name                                           | Details                                                      | Criteria                                                     | Reward  |
+  | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
+  | 1    | Make a tx between your wallets | Create two wallets. The first *wallet_1* using https://wallet.konstellation.tech and the second one **wallet_2** using `konstellationcli keys add <name>` in the terminal (command line). Export *wallet2* with keystore using `konstellationcli keys export-keystore <name_of_your_key>` in the terminal. Import the *wallet 2* to the http://wallet.konstellation.tech/recover/key/text. Run `send` tx between *wallet_1* and *wallet_2* with your `name-pgpid` as memo | Submit two addresses, tx hash | 50 darc |
+  | 2   | Setup a Full node and create a validator                             | set up a full node. Use `moniker` that was used in the form and `name-pgpid` as `details` | Submit your IP and the team could check the configuration of your node | 50 darc |
+  | 3   | Withdraw earnings from staking          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash and the team could verify the details of transaction | 50 darc |
+  | 4   | Unjail your validator      | Shutdown your node and wait until it will be jailed.                            | Run `unjail` transaction with your `name-pgpid` as memo. Submit your transaction hash | 50 darc |
+  | 5   | Withdraw earnings #2          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 6   | Delegate some **darc** to your validator      | Complete an delegate transaction                           | Run `delegate`transaction with your `name-pgpid` as memo. Submit your transaction hash | 50 darc |  
+  | 7   | Withdraw earnings #3          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 8   | Redelegate some **darc** from your validator *validator_1* to another *validator_2*           |  Complete an redelegate transaction          | Run `redelegate begin`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 9   | Withdraw earnings #5          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 10  | Undelegate some **darc** from *validator_2*           |  Complete an undelegate transaction          | Run `begin_unbond`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |*           |  Complete an redelegate transaction          | Run `redelegate begin`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 11   | Withdraw earnings #6          | Wait until you get the desirable number of tokens and do a withdraw    | Run `withdraw`  transaction with your `name-pgpid` as memo. Submit tx hash | 50 darc |
+  | 12   | Create token         | Run `issue_token` transaction with wallet_1 and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 13   | Transfer         | Run `transfer` transaction to wallet_2 from wallet_1 and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 14   | Approve allowance         | Run `issue_approve` transaction with wallet_1 as spender of wallet_2's tokens and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 15   | Tranfer from         | Create new *wallet_3*. Run `transfer_from` transaction from *wallet_2* to *wallet_3* signed by *wallet_1* and your `name-pgpid` as memo.  | Submit tx hash | 50 darc |
+  | 16   | Mint         | Run `issue_mint` transaction and your `name-pgpid` as memo. | Submit tx hash | 50 darc |
+  | 17   | Burn         | Run `issue_burn` transaction and your `name-pgpid` as memo. | Submit tx hash | 50 darc |
+  | 18   | Freeze         | Run `issue_freeze` transaction and your `name-pgpid` as memo. Try to run another `transfer` transaction. You might see error in tx body | Submit tx hash | 50 darc |
+  | 19   | Transfer ownership         | Run `transfer_ownership` transaction and your `name-pgpid` as memo | Submit tx hash | 50 darc |
+  
+### How to submit evidence
+
+You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/konstellation/testnet/issues/1):
+
+```
+GitHub ID: XXXX
+pgp ID: XXX
+Link to your PR
+Node URL
+Task 3: Hash
+Task 4: Hash
+...
+```
