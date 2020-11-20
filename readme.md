@@ -14,7 +14,7 @@ To get started with the latest testnet, see the
 ⚠️ Latest testnet: [knstlhub-2](./knstlhub-2) ⚠️
 
 - Go version: [v1.14+](https://golang.org/dl/)
-- Konstellation version: [v0.1.32](https://github.com/konstellation/konstellation/releases)
+- Konstellation version: [v0.1.31](https://github.com/konstellation/konstellation/releases)
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/Konstellation/testnet/master/knstlhub-2/genesis.json)
 Download the config here: [config](https://raw.githubusercontent.com/Konstellation/testnet/master/knstlhub-2/config.toml)
