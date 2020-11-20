@@ -1,17 +1,4 @@
-# Konstellation Testnets
-
-This repo collects the genesis and configuration files for the various Konstellation
-testnets. It exists so the [Konstellation](https://github.com/konstellation/konstellation)
-repo does not get bogged down with large genesis files and status updates.
-
-## Getting Started
-
-To get started with the latest testnet, see the
-[docs](https://github.com/Konstellation/konstellation#to-join-testnet-follow-this-steps).
-
-## Testnet Status
-
-⚠️ Latest testnet: [knstlhub-2](./knstlhub-2) ⚠️
+# Knstlhub-2
 
 - Go version: [v1.14+](https://golang.org/dl/)
 - Konstellation version: [v0.1.32](https://github.com/konstellation/konstellation/releases)
