@@ -15,7 +15,7 @@
 proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
-moniker = "hawking"
+moniker = "node1"
 
 # If this node is many blocks behind the tip of the chain, FastSync
 # allows them to catchup quickly by downloading blocks in parallel
@@ -184,7 +184,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "17d149324fcf437cd40d9f44bbe98c29412a0915@node6.konstellation.tech:26656,2aaadea64d67ed1c95845dd17a46a2000b90d47a@node8.konstellation.tech:26656,ad0c6de8dff5a588da0151b9040549eff38c5505@206.81.29.202:26656,ecf550aa2e299740603efb2c58685e06f80ff0d6@node7.konstellation.tech:26656"
+persistent_peers = "2522b5fd985c21b74633ec8033d282dc1cb8acdd@node7.konstellation.tech:26656,2c2b504d20b7d5208e69863344e5112ac2972ca6@node8.konstellation.tech:26656,79bcfe87f3fa9d79a6311210cb223bb5d0c7806f@206.81.29.202:26656,d2cddcdcde75127fd8fab2dcf08efc25856ca36e@node6.konstellation.tech:26656"
 
 # UPNP port forwarding
 upnp = false
